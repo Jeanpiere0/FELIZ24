@@ -7,7 +7,7 @@ const PORT = 3000;
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/feliz24.html");
+    res.sendFile(__dirname + "/FELIZ24.html");
 });
 
 app.post("/visita", (req, res) => {
