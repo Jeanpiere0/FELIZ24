@@ -18,7 +18,9 @@ app.post("/visita", (req, res) => {
 
     const visita = {
         ip: ip,
-        fecha: new Date().toLocaleString("es-PE"),
+        fecha: new Date().toLocaleString("es-PE", {
+            timeZone: "America/Lima"
+        }),
         navegador: req.body.navegador || "Desconocido",
         idioma: req.body.idioma || "Desconocido",
         pantalla: req.body.pantalla || "Desconocida",
